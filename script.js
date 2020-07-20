@@ -12,8 +12,8 @@ document.writeln("Перше число: " + firstNumber);
 let secondNumber = +prompt('Введіть значення M: ');
 
 // цикл для перевірки на відповідність числа до умови
-while(!Number.isInteger(secondNumber) || isNaN(secondNumber) || secondNumber == ""){
-    secondNumber = +prompt('Введіть значення M: ');
+while(!Number.isInteger(secondNumber) || isNaN(secondNumber) || secondNumber == "" || firstNumber < secondNumber){
+    secondNumber = +prompt('Введіть значення M більше від N: ');
     }
 
 document.writeln("Друге число: " + secondNumber);
